@@ -1,0 +1,65 @@
+{
+  "raw_rows": 1030,
+  "unique_feature_rows": 996,
+  "split": {
+    "train": 597,
+    "calibration": 199,
+    "test": 200
+  },
+  "selected": "hist_gradient_boosting",
+  "cross_validation": {
+    "mean_baseline": {
+      "mean_mae": 13.011882218684283,
+      "std_mae": 0.8912460224440487
+    },
+    "scaled_ridge": {
+      "mean_mae": 8.221257660305003,
+      "std_mae": 0.19164647763939877
+    },
+    "hist_gradient_boosting": {
+      "mean_mae": 3.2557784851199627,
+      "std_mae": 0.29085122272257197
+    }
+  },
+  "test": {
+    "mean_baseline": {
+      "mae": 12.70552916139697,
+      "rmse": 15.865799892541807,
+      "r2": -0.007571116312920401
+    },
+    "scaled_ridge": {
+      "mae": 7.9832853697616715,
+      "rmse": 9.828436443092487,
+      "r2": 0.6133476700871677
+    },
+    "hist_gradient_boosting": {
+      "mae": 3.378989509328047,
+      "rmse": 4.830641236705592,
+      "r2": 0.9065968908261823
+    }
+  },
+  "conformal": {
+    "alpha": 0.1,
+    "radius_mpa": 9.601337887822488,
+    "test_coverage": 0.91,
+    "mean_width_mpa": 19.202675775644977
+  },
+  "provenance": {
+    "seed": 42,
+    "python": "3.11.14",
+    "platform": "Darwin",
+    "packages": {
+      "numpy": "2.4.4",
+      "pandas": "3.1.0",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.10.8",
+      "joblib": "1.6.0",
+      "torch": "2.11.0",
+      "fastapi": "0.162.0"
+    },
+    "source": {
+      "url": "https://archive.ics.uci.edu/static/public/165/concrete+compressive+strength.zip",
+      "sha256": "dad85d14de8aee4e07479daa774e6b569a313715b71a3b92c95a07cf91c2c9a7"
+    }
+  }
+}

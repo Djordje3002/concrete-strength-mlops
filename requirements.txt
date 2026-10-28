@@ -1,0 +1,11 @@
+# Exact runtime dependencies; install the package with pip install -e .
+numpy==2.4.4
+pandas==3.1.0
+scikit-learn==1.9.1
+scipy==1.17.1
+matplotlib==3.10.8
+joblib==1.6.0
+xlrd==2.0.2
+fastapi==0.162.0
+pydantic==2.14.1
+uvicorn==0.54.0
